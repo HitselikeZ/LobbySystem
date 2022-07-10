@@ -1,5 +1,6 @@
 package de.hitselikez.listeners;
 
+import de.hitselikez.invs.Startinv;
 import de.hitselikez.main.Main;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -14,6 +15,9 @@ public class JoinListener implements Listener {
         Player p = (Player) e.getPlayer();
 
         Main.build.put(p, false);
+
+        new Startinv(p);
+
 
         if (p.hasPermission("join.admin")) {
 

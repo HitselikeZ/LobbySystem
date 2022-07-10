@@ -1,6 +1,7 @@
 package de.hitselikez.main;
 
 import de.hitselikez.cmds.Build;
+import de.hitselikez.invs.Inv_prot;
 import de.hitselikez.listeners.JoinListener;
 import de.hitselikez.listeners.Prot_Listener;
 import de.hitselikez.listeners.QuitListener;
@@ -37,6 +38,9 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new JoinListener(), this);
         Bukkit.getPluginManager().registerEvents(new QuitListener(), this);
         Bukkit.getPluginManager().registerEvents(new Prot_Listener(), this);
+        Bukkit.getPluginManager().registerEvents(new Inv_prot(), this);
+
+
 
     }
 
